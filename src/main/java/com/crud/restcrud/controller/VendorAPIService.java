@@ -6,12 +6,10 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/vendor")
-
-public class VendorController {
+public class VendorAPIService {
 
 
     Vendor vendor;
-
 
     @GetMapping("{vendorId}")
     public Vendor getVendorDetails(String vendorId){
